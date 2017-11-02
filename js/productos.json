@@ -3,18 +3,28 @@ var productos = [
 		"id": 1,
 		"titulo": "titulo1",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
-		"imagen": "http://placehold.it/400x300"
+		"imagen": "http://placehold.it/400x300",
+		"tipo": "ordenador"
 	},
 	{
 		"id": 2,
 		"titulo": "titulo2",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
-		"imagen": "http://placehold.it/400x300"
+		"imagen": "http://placehold.it/400x300",
+		"tipo": "movil"
 	},
 	{
 		"id": 3,
 		"titulo": "titulo3",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
-		"imagen": "http://placehold.it/400x300"
+		"imagen": "http://placehold.it/400x300",
+		"tipo": "consola"
 	},
+	{
+		"id": 4,
+		"titulo": "titulo4",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
+		"imagen": "http://placehold.it/400x300",
+		"tipo": "ordenador"
+	}
 ]
