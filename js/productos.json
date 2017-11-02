@@ -1,0 +1,17 @@
+var productos = [
+	{
+		"id": 1,
+		"titulo": "titulo1",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
+	},
+	{
+		"id": 2,
+		"titulo": "titulo2",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
+	},
+	{
+		"id": 3,
+		"titulo": "titulo3",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
+	},
+]
