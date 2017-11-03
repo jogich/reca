@@ -3,28 +3,32 @@ var productos = [
 		"id": 1,
 		"titulo": "titulo1",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
-		"imagen": "http://placehold.it/400x300",
+		"imagen": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW6L3H?ver=050a&q=60&m=6&h=423&w=752&b=%23FFFFFFFF&o=f",
+		"precio": 300,
 		"tipo": "ordenador"
 	},
 	{
 		"id": 2,
 		"titulo": "titulo2",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
-		"imagen": "http://placehold.it/400x300",
+		"imagen": "https://www.profesionalreview.com/wp-content/uploads/2016/09/Smartphone-Samsung-Galaxy-J5-2016.jpg",
+		"precio": 299.99,
 		"tipo": "movil"
 	},
 	{
 		"id": 3,
 		"titulo": "titulo3",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
-		"imagen": "http://placehold.it/400x300",
+		"imagen": "https://psmedia.playstation.com/is/image/psmedia/ps4-overview-screen-03-eu-06sep16?$MediaCarousel_LargeImage$",
+		"precio": 349.99,
 		"tipo": "consola"
 	},
 	{
 		"id": 4,
 		"titulo": "titulo4",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
-		"imagen": "http://placehold.it/400x300",
+		"imagen": "https://www.cyberpowerpc.com/images/cs/inwin303/orgv3_220.png",
+		"precio": 500,
 		"tipo": "ordenador"
 	}
 ]
