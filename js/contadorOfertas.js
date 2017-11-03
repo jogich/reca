@@ -1,22 +1,35 @@
 
 /*Tiempo inicial en segundos*/
-const tiempoInicial = 10;
-var tiempo = tiempoInicial;
-//var marcadorTiempo = document.getElementsByClassName("tiempoMarcador")[0];
+const tiempoInicial = 80;
+var tiempo;
+var marcadoresTiempo;
+var contador;
+
+/**Inicia el contador*/
+function contadorOfertas(){
+	tiempo = tiempoInicial;
+	marcadoresTiempo = document.getElementsByClassName("marcadorTiempo");
+	for(let i=0;i<marcadoresTiempo.length;i++){
+		marcadoresTiempo[i].innerHTML=calcularMinutos(tiempo)+":"+calcularSegundos(tiempo);
+	}
+	contador = window.setInterval(contar, 1000);
+}
 
 
 function contar(){
-	tiempo++;
-	tiempoMarcador.innerHTML="Tiempo: "+calcularMinutos(tiempo)+":"+calcularSegundos(tiempo);
+	tiempo--;
 	
+	for(let i=0;i<marcadoresTiempo.length;i++){
+		marcadoresTiempo[i].innerHTML=calcularMinutos(tiempo)+":"+calcularSegundos(tiempo);
+	}
 	
-	//Detener contador cuando el tiempo al límite.
-	//if(tiempo<=0){
-		
-	//}
+	//Detener contador cuando el tiempo llega a 0.
+	if(tiempo<=0){
+		window.clearInterval(contador);
+	}
 }
 
-/*Calcula la cantidad de segundos que se mostrarán a partir de una cantidad total de segundos*/
+/*Calcula la cantidad de segundos por minuto que se mostrarán a partir de una cantidad total de segundos*/
 function calcularSegundos(tiempo){
 	if(tiempo%60<10){
 		return "0"+tiempo%60;

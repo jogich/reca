@@ -28,8 +28,6 @@ function cargarProductos(producto){
 			aProducto.appendChild(imgProducto);
 			divProducto.appendChild(aProducto);
 			contenedor.appendChild(divProducto);
-			console.log("a: "+productos[i].id);
-			console.log("a: "+productos[i].titulo);
 		}
 	}
 }
