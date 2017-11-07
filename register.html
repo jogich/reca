@@ -11,9 +11,43 @@
     </head>
     <body>
     <div class="text-center">
-      <img src="img/logo.jpg" id="registerlogo">
+        <a href="index.html"><img src="img/logo.jpg" id="registerlogo"></a>
+    <div class="container">
+        <form onsubmit="return comprueba();">
+            <div>
+                <label>Nombre</label>
+                <input type="text" name="name" required="true">
+            </div>
+            <div>
+                <label>Apellidos</label>
+                <input type="text" name="surname" required="true">
+            </div>
+            <div>
+                <label>Dirección</label>
+                <input type="" name="address" required="true">
+            </div>
+            <div>
+                <label>Fecha de nacimiento</label>
+                <input type="date" name="birthday" id="birthday" required="true">
+            </div>
+            <div>
+                <label>Correo electrónico</label>
+                <input type="email" name="email" required="true">
+            </div>
+            <div>
+                <label>Contraseña</label>
+                <input type="password" name="pass1" id="pass1" required="true">
+            </div>
+            <div>
+                <label>Vuelve a introducir tu contraseña</label>
+                <input type="password" name="pass2" id="pass2" required="true">
+            </div>
+            <input type="submit" name="" value="Registrarse" class="btn btn-success">
+        </form>
+    </div>
     </div>
 </footer>
+<script type="text/javascript" src="js/register.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
