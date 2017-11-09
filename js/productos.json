@@ -17,7 +17,7 @@ var productos = [
 	},
 	{
 		"id": 3,
-		"titulo": "titulo3",
+		"titulo": "PS4 SLIM",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
 		"imagen": "https://psmedia.playstation.com/is/image/psmedia/ps4-overview-screen-03-eu-06sep16?$MediaCarousel_LargeImage$",
 		"precio": 349.99,
@@ -27,8 +27,40 @@ var productos = [
 		"id": 4,
 		"titulo": "titulo4",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
-		"imagen": "https://www.cyberpowerpc.com/images/cs/inwin303/orgv3_220.png",
+		"imagen": "https://brain-images-ssl.cdn.dixons.com/6/9/10158596/l_10158596_004.jpg",
 		"precio": 500,
+		"tipo": "ordenador"
+	},
+	{
+		"id": 5,
+		"titulo": "titulo5",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
+		"imagen": "https://www.cyberpowerpc.com/images/cs/inwin303/orgv3_220.png",
+		"precio": 800,
+		"tipo": "ordenador"
+	},
+	{
+		"id": 6,
+		"titulo": "titulo6",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
+		"imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/06/xbox-one-x.jpg",
+		"precio": 499.99,
+		"tipo": "consola"
+	},
+	{
+		"id": 7,
+		"titulo": "titulo7",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
+		"imagen": "https://andro4all.com/files/2017/08/LG-V30-700x506.jpg",
+		"precio": 799.50,
+		"tipo": "movil"
+	},
+	{
+		"id": 8,
+		"titulo": "titulo8",
+		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
+		"imagen": "https://i.blogs.es/4acfba/acer-aspire-v5-nav2/450_1000.png",
+		"precio": 499.50,
 		"tipo": "ordenador"
 	}
 ]
