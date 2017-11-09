@@ -1,4 +1,4 @@
-cargarProductos('todo');
+cargarProductos('movil');
 
 var elementos = document.getElementsByClassName('productoDiv');
 for (i=0;i<elementos.length;i++){
