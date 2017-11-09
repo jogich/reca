@@ -12,37 +12,37 @@
     <body>
     <div class="text-center">
         <a href="index.html"><img src="img/logo.jpg" id="registerlogo"></a>
-    <div class="container">
-        <form onsubmit="return comprueba();">
-            <div>
-                <label>Nombre</label>
-                <input type="text" name="name" required="true">
+    <div class="container" id="container">
+        <form>
+            <div class="form-group">
+                <label class="col-2 col-form-label">Nombre</label>
+                <input type="text" name="name" class="" required="true" placeholder="Nombre...">
             </div>
-            <div>
-                <label>Apellidos</label>
-                <input type="text" name="surname" required="true">
+            <div class="form-group">
+                <label class="col-2 col-form-label">Apellidos</label>
+                <input type="text" name="surname" required="true" placeholder="Apellidos...">
             </div>
-            <div>
-                <label>Dirección</label>
-                <input type="" name="address" required="true">
+            <div class="form-group">
+                <label class="col-2 col-form-label">Dirección</label>
+                <input type="" name="address" required="true" placeholder="Dirección...">
             </div>
-            <div>
-                <label>Fecha de nacimiento</label>
+            <div class="form-group">
+                <label class="col-2 col-form-label">Fecha de nacimiento</label>
                 <input type="date" name="birthday" id="birthday" required="true">
             </div>
-            <div>
-                <label>Correo electrónico</label>
-                <input type="email" name="email" required="true">
+            <div class="form-group">
+                <label class="col-2 col-form-label">Correo electrónico</label>
+                <input type="email" name="email" required="true" placeholder="Correo electrónico...">
             </div>
-            <div>
-                <label>Contraseña</label>
-                <input type="password" name="pass1" id="pass1" required="true">
+            <div class="form-group">
+                <label class="col-2 col-form-label">Contraseña</label>
+                <input type="password" name="pass1" id="pass1" required="true" placeholder="Contraseña...">
             </div>
-            <div>
-                <label>Vuelve a introducir tu contraseña</label>
-                <input type="password" name="pass2" id="pass2" required="true">
+            <div class="form-group">
+                <label class="col-2 col-form-label">Vuelve a introducir tu contraseña</label>
+                <input type="password" name="pass2" id="pass2" required="true" placeholder="Confirmar contraseña...">
             </div>
-            <input type="submit" name="" value="Registrarse" class="btn btn-success">
+            <input type="button" onclick="comprueba();" name="" value="Registrarse" class="btn btn-success">
         </form>
     </div>
     </div>
