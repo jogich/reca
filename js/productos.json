@@ -9,7 +9,7 @@ var productos = [
 	},
 	{
 		"id": 2,
-		"titulo": "titulo2",
+		"titulo": "Samsung Galaxy J5 2016",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
 		"imagen": "https://www.profesionalreview.com/wp-content/uploads/2016/09/Smartphone-Samsung-Galaxy-J5-2016.jpg",
 		"precio": 299.99,
@@ -41,7 +41,7 @@ var productos = [
 	},
 	{
 		"id": 6,
-		"titulo": "titulo6",
+		"titulo": "XBOX ONE X",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
 		"imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/06/xbox-one-x.jpg",
 		"precio": 499.99,
@@ -49,15 +49,15 @@ var productos = [
 	},
 	{
 		"id": 7,
-		"titulo": "titulo7",
+		"titulo": "LG V30",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
-		"imagen": "https://andro4all.com/files/2017/08/LG-V30-700x506.jpg",
+		"imagen": "http://cdn.pocket-lint.com/r/s/1200x/assets/images/141930-phones-news-this-is-the-lg-v30-image1-ya6nxmooat.jpg",
 		"precio": 799.50,
 		"tipo": "movil"
 	},
 	{
 		"id": 8,
-		"titulo": "titulo8",
+		"titulo": "Acer Aspire V5",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
 		"imagen": "https://i.blogs.es/4acfba/acer-aspire-v5-nav2/450_1000.png",
 		"precio": 499.50,
