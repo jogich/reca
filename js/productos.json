@@ -19,7 +19,7 @@ var productos = [
 		"id": 3,
 		"titulo": "PS4 SLIM",
 		"descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu cursus justo, sit amet dignissim justo.",
-		"imagen": "https://psmedia.playstation.com/is/image/psmedia/ps4-overview-screen-03-eu-06sep16?$MediaCarousel_LargeImage$",
+		"imagen": "http://media.4rgos.it/i/Argos/5718469_R_Z001A?$Web$&$DefaultPDP570$&$WebPDPBadge570$&topright=empty&bottomleft=empty",
 		"precio": 349.99,
 		"tipo": "consola"
 	},
