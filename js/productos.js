@@ -50,6 +50,7 @@ function cargarProductos(producto, numProductos){
 
 			// Div que contiene los datos del producto
 			divDatos = document.createElement("div");
+			divDatos.classList.add("datosDiv");
 
 			// Título del producto
 			tituloProducto = document.createElement("h4");
@@ -101,9 +102,15 @@ function addJSPrecio(elementoDiv){
 	elementoDiv.onmouseout = function(){ocultar(elementoDiv)};
 
 	function mostrar(elementoDiv){
-    	elementoDiv.getElementsByTagName("p")[0].style.visibility="visible";
+		let precio = elementoDiv.getElementsByTagName("p")[0];
+    	precio.style.visibility = "visible";
+    	precio.style.paddingRight = "10px";
+    	precio.style.opacity = "1";
 	}
 	function ocultar(elementoDiv){
-	    elementoDiv.getElementsByTagName("p")[0].style.visibility="hidden";
+		let precio = elementoDiv.getElementsByTagName("p")[0];
+	    precio.style.visibility="hidden";
+	    precio.style.paddingRight = "40px";
+    	precio.style.opacity = "0";
 	}
 }
