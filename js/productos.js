@@ -58,7 +58,7 @@ function cargarProductos(producto, numProductos){
 			// Precio del producto
 			pProducto = document.createElement("p");
 			pProducto.classList.add("productoPrecio");
-			pProducto.innerHTML = productos[i].precio;
+			pProducto.innerHTML = productos[i].precio+"€";
 
 			// Se adjuntan los elementos a un div que a su vez es insertado dentro del div "contenedorProd"
 			aProducto.appendChild(imgProducto);
@@ -80,10 +80,10 @@ function cargarProductos(producto, numProductos){
 */
 function addCss(cssId){
 	if (!document.getElementById(cssId)){
-	    var head  = document.getElementsByTagName('head')[0];
-	    var link  = document.createElement('link');
-	    link.id   = cssId;
-	    link.rel  = 'stylesheet';
+	    var head = document.getElementsByTagName('head')[0];
+	    var link = document.createElement('link');
+	    link.id = cssId;
+	    link.rel = 'stylesheet';
 	    link.type = 'text/css';
 	    link.href = 'css/producto.css';
 	    link.media = 'all';
@@ -92,9 +92,9 @@ function addCss(cssId){
 }
 
 /**
-* Se carga el css del producto en el documento
+* Se añaden los mouse listeners para mostrar el precio al pasar el ratón por encima
 *
-* @param {string} cssId Id del css
+* @param {string} elementoDiv Elemento de tipo div sobre el que se aplica el mouse listener
 */
 function addJSPrecio(elementoDiv){
 	elementoDiv.onmouseover = function(){mostrar(elementoDiv)};

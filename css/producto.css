@@ -11,3 +11,7 @@
 .imgProducto{
 	max-height: 260px;
 }
+
+.productoPrecio{
+	font-size: 120%;
+}
