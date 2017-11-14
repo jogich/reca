@@ -31,7 +31,6 @@ function cargarProductos(producto, numProductos){
 			//divProducto.classList.add("col-md-4");
 			//divProducto.classList.add("col-xs-6");
 			divProducto.classList.add("productoDiv");
-			divProducto.style.height="350px";
 			// Se añade la función para mostrar el precio al pasar el reatón sobre el producto
 			addJSPrecio(divProducto);
 
