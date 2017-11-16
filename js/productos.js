@@ -27,14 +27,12 @@ function cargarProductos(producto, numProductos){
 		if((producto=="todo" || productos[i].tipo==producto) && productosMostrados<cantidadMax){
 			// div que contiene el producto
 			divProducto = document.createElement("div");
-			divProducto.id = i+1;
 			//divProducto.classList.add("col-lg-3");
 			//divProducto.classList.add("col-md-4");
 			//divProducto.classList.add("col-xs-6");
 			divProducto.classList.add("productoDiv");
 			divProducto.setAttribute('draggable', true);
 			divProducto.addEventListener('dragstart', evento => {
-  			// dragstart handlings here
 				evento.dataTransfer.setData("Text", evento.target.id);
   		}, true)
 			// Se añade la función para mostrar el precio al pasar el reatón sobre el producto
@@ -48,6 +46,7 @@ function cargarProductos(producto, numProductos){
 
 			// Imagen del producto
 			imgProducto = document.createElement("img");
+			imgProducto.id=i;
 			imgProducto.classList.add("imgProducto");
 			imgProducto.classList.add("img-fluid");
 
@@ -122,6 +121,7 @@ function addJSPrecio(elementoDiv){
 	}
 }
 var contadorCompra=0;
+var ids = [];
 
 function pasar(evento){
 	evento.preventDefault();
@@ -131,6 +131,38 @@ function soltar(evento){
 	contadorCompra++;
 	evento.preventDefault();
 	var id = evento.dataTransfer.getData("Text");
+	var nuevoId = ids.push(id);
+	localStorage["ids"] = JSON.stringify(ids);
 	elemento = document.getElementById("contador");
 	elemento.innerHTML=contadorCompra;
+}
+function cargarProductosId(){
+	var divCarrito;
+	var liCarrito;
+	var h2Carrito;
+	var imgCarrito;
+	var ids = JSON.parse(localStorage["ids"]);
+	var div = document.getElementById("contenedorCart");
+	for (var i = 0; i < ids.length; i++) {
+		console.log(ids[i]);
+		liCarrito = document.createElement("li");
+		liCarrito.classList.add("list-group-item");
+
+
+		h2Carrito = document.createElement("h2");
+		h2Carrito.innerHTML = productos[ids[i]].titulo;
+
+		imgCarrito = document.createElement("img");
+		imgCarrito.src = productos[ids[i]].imagen;
+		imgCarrito.style.width = "20%";
+
+		divCarrito = document.createElement("div");
+		divCarrito.innerHTML = productos[ids[i]].precio;
+
+		liCarrito.appendChild(h2Carrito);
+		liCarrito.appendChild(imgCarrito);
+		liCarrito.appendChild(divCarrito);
+		div.appendChild(liCarrito);
+	}
+
 }
