@@ -120,22 +120,28 @@ function addJSPrecio(elementoDiv){
     	precio.style.opacity = "0";
 	}
 }
+//Iniciamos el contador de los items del carrito
 var contadorCompra=0;
+//Guarda el id de los items que hay en el carrito en un array
 var ids = [];
 
 function pasar(evento){
 	evento.preventDefault();
-
 }
+//Al soltar el producto en el carrito hace esta accion.
 function soltar(evento){
+	//Aumentamos el contador de los productos ya que añadimos un producto al carrito
 	contadorCompra++;
 	evento.preventDefault();
+	//Cojemos el id del producto soltado y lo guardamos en el array
 	var id = evento.dataTransfer.getData("Text");
 	var nuevoId = ids.push(id);
+	//Guardamos el array de las id de los productos en un localStorage
 	localStorage["ids"] = JSON.stringify(ids);
 	elemento = document.getElementById("contador");
 	elemento.innerHTML=contadorCompra;
 }
+//Esta funcion se llama al ir a la pagina del carrito, carga los productos que ha arrastrado el cliente.
 function cargarProductosId(){
 	var divCarrito;
 	var liCarrito;
