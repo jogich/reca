@@ -31,13 +31,12 @@ function cargarProductos(producto, numProductos){
 			//divProducto.classList.add("col-md-4");
 			//divProducto.classList.add("col-xs-6");
 			divProducto.classList.add("productoDiv");
-			divProducto.style.height="350px";
 			// Se añade la función para mostrar el precio al pasar el reatón sobre el producto
 			addJSPrecio(divProducto);
 
 			// Enlace que contiene la imagen del producto
 			aProducto = document.createElement("a");
-			aProducto.href = "#";
+			aProducto.href = "producto.html?id=1";
 			aProducto.classList.add("d-block");
 			aProducto.classList.add("mb-4");
 

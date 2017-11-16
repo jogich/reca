@@ -51,40 +51,27 @@
       		</div>
     	</nav>
       <div class="container">
-        <div id="ofertaDiv" class="ofertaDiv">
-          <img class="imgOferta" src="img/logo.jpg">
-          <div class="datosOfertaDiv">
-            <h3 id="tituloOferta">Titulo</h3>
-            
-            <p id="mensajeOferta">Mensaje de la oferta</p>
-            <div class="preciosOferta">
-              <p id="precioOferta">Precio</p>
-              <p id="precio">Precio anterior</p>
-            </div>
-            <p id="unidadesOferta">Límite unidades</p>
-            <h3 class="marcadorTiempo"></h3>
-          </div>
+        <div>
+          <h3 id="tituloProducto"></h3>
         </div>
-        <div id="contenedorProd" class="row text-center text-lg-left"></div>
-        <h3 class="marcadorTiempo d-block"></h3>
-
       </div>
-    </body>
-<footer class="">
-    <div class="container">
-    	<div class="footer">
-    		Powered by <strong>Reca.</strong>
-    		<div class="lg-6">
-    			<a href="" class="fa fa-twitter fa-2x"></a>
-    			<a href="" class="fa fa-facebook fa-2x"></a>
-    		</div>
-    	</div>
-    </div>
-</footer>
+    
+      <footer class="">
+          <div class="container">
+          	<div class="footer">
+          		Powered by <strong>Reca.</strong>
+          		<div class="lg-6">
+          			<a href="" class="fa fa-twitter fa-2x"></a>
+          			<a href="" class="fa fa-facebook fa-2x"></a>
+          		</div>
+          	</div>
+          </div>
+      </footer>
+</body>
 <script type="text/javascript">
-  /*Cargar productos en el div contenedorProd*/
-  cargarProductos('todo', 3);
-  contadorOfertas();
+  var url = new URL(window.location.href);
+  var id = url.searchParams.get("id");
+  document.getElementById("tituloProducto").innerHTML = id;
 </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
