@@ -12,6 +12,28 @@
         .preciosProducto{
           font-size: 125%;
         }
+
+        .contenedorProducto{
+          height: 500px;
+          overflow: hidden;
+        }
+
+        #divImgProducto{
+          float: left;
+        }
+
+        #divDatosProducto{
+          float: left;
+          
+        }
+
+        p{
+          width: 500px;
+        }
+
+        #imgProducto{
+          max-width: 400px;
+        }
       </style>
     </head>
     <body>
@@ -52,15 +74,17 @@
           </div>
       </nav>
       <div class="container">
-        <div>
-          <div>
+        <div class="contenedorProducto">
+          <div id="divImgProducto">
             <img id="imgProducto" alt="Imagen del producto">
           </div>
-          <h3 id="tituloProducto"></h3>
-          <div class="preciosProducto">
-            <p id="precioProducto"></p>
+          <div id="divDatosProducto">
+            <h3 id="tituloProducto"></h3>
+            <div class="preciosProducto">
+              <p id="precioProducto"></p>
+            </div>
+            <p id="descripcionProducto"></p>
           </div>
-          <p id="descripcionProducto"></p>
         </div>
       </div>
     
@@ -78,10 +102,16 @@
 </body>
 <script type="text/javascript">
   var id = new URL(window.location.href).searchParams.get("id");
-  document.getElementById("imgProducto").src = productos[id].imagen;
-  document.getElementById("tituloProducto").innerHTML = productos[id].titulo;
-  document.getElementById("precioProducto").innerHTML = productos[id].precio+"€";
-  document.getElementById("descripcionProducto").innerHTML = productos[id].descripcion;
+  var pos;
+  for (var i=0;i<productos.length;i++) {
+    if(productos[i].id==id){
+      pos = i;
+    }
+  }
+  document.getElementById("imgProducto").src = productos[pos].imagen;
+  document.getElementById("tituloProducto").innerHTML = productos[pos].titulo;
+  document.getElementById("precioProducto").innerHTML = productos[pos].precio+"€";
+  document.getElementById("descripcionProducto").innerHTML = productos[pos].descripcion;
 </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

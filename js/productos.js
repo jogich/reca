@@ -42,7 +42,7 @@ function cargarProductos(producto, numProductos){
 
 			// Enlace que contiene la imagen del producto
 			aProducto = document.createElement("a");
-			aProducto.href = "producto.html?id=1";
+			aProducto.href = "producto.html?id="+productos[i].id;
 			aProducto.classList.add("d-block");
 			aProducto.classList.add("mb-4");
 
