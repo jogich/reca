@@ -163,7 +163,7 @@ function cargarProductosId(){
 		imgCarrito.style.width = "20%";
 
 		divCarrito = document.createElement("div");
-		divCarrito.innerHTML = productos[ids[i]].precio;
+		divCarrito.innerHTML = productos[ids[i]].precio+"€";
 
 		liCarrito.appendChild(h2Carrito);
 		liCarrito.appendChild(imgCarrito);
