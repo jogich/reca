@@ -27,6 +27,7 @@ function cargarProductos(producto, numProductos){
 		if((producto=="todo" || productos[i].tipo==producto) && productosMostrados<cantidadMax){
 			// div que contiene el producto
 			divProducto = document.createElement("div");
+			divProducto.id = i+1;
 			//divProducto.classList.add("col-lg-3");
 			//divProducto.classList.add("col-md-4");
 			//divProducto.classList.add("col-xs-6");
@@ -120,17 +121,16 @@ function addJSPrecio(elementoDiv){
     	precio.style.opacity = "0";
 	}
 }
-var contador=0;
+var contadorCompra=0;
 
 function pasar(evento){
 	evento.preventDefault();
 
 }
 function soltar(evento){
-	contador++;
+	contadorCompra++;
 	evento.preventDefault();
 	var id = evento.dataTransfer.getData("Text");
 	elemento = document.getElementById("contador");
-	elemento.style.display = "block";
-	elemento.innerHTML=contador;
+	elemento.innerHTML=contadorCompra;
 }
