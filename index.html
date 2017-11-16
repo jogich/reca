@@ -45,7 +45,8 @@
           		<ul class="navbar-nav mr-auto"></ul>
           		<ul class="navbar-nav">
           			<li class="nav-item">
-            			<a href="" class="nav-link fa fa-shopping-cart fa-1x"></a>
+            			<a href="" class="nav-link fa fa-shopping-cart fa-1x" ondragover="pasar(event)" ondrop="soltar(event)"></a>
+                  <div id="contador"></div>
           			</li>
         		</ul>
       		</div>
@@ -55,7 +56,7 @@
           <img class="imgOferta" src="img/logo.jpg">
           <div class="datosOfertaDiv">
             <h3 id="tituloOferta">Titulo</h3>
-            
+
             <p id="mensajeOferta">Mensaje de la oferta</p>
             <div class="preciosOferta">
               <p id="precioOferta">Precio</p>

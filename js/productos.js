@@ -22,7 +22,7 @@ function cargarProductos(producto, numProductos){
 	}
 	// Se carga el css del producto en el documento
 	addCss("cssProducto");
-	
+
 	for(var i=0;i<productos.length;i++){
 		if((producto=="todo" || productos[i].tipo==producto) && productosMostrados<cantidadMax){
 			// div que contiene el producto
@@ -31,6 +31,11 @@ function cargarProductos(producto, numProductos){
 			//divProducto.classList.add("col-md-4");
 			//divProducto.classList.add("col-xs-6");
 			divProducto.classList.add("productoDiv");
+			divProducto.setAttribute('draggable', true);
+			divProducto.addEventListener('dragstart', evento => {
+  			// dragstart handlings here
+				evento.dataTransfer.setData("Text", evento.target.id);
+  		}, true)
 			// Se añade la función para mostrar el precio al pasar el reatón sobre el producto
 			addJSPrecio(divProducto);
 
@@ -44,6 +49,7 @@ function cargarProductos(producto, numProductos){
 			imgProducto = document.createElement("img");
 			imgProducto.classList.add("imgProducto");
 			imgProducto.classList.add("img-fluid");
+
 			//imgProducto.classList.add("img-thumbnail");
 			imgProducto.src = productos[i].imagen;
 
@@ -91,6 +97,7 @@ function addCss(cssId){
 	}
 }
 
+
 /**
 * Se añaden los mouse listeners para mostrar el precio al pasar el ratón por encima
 *
@@ -112,4 +119,18 @@ function addJSPrecio(elementoDiv){
 	    precio.style.paddingRight = "40px";
     	precio.style.opacity = "0";
 	}
+}
+var contador=0;
+
+function pasar(evento){
+	evento.preventDefault();
+
+}
+function soltar(evento){
+	contador++;
+	evento.preventDefault();
+	var id = evento.dataTransfer.getData("Text");
+	elemento = document.getElementById("contador");
+	elemento.style.display = "block";
+	elemento.innerHTML=contador;
 }
