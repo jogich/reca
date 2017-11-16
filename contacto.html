@@ -13,9 +13,10 @@
       <script type="text/javascript" src="js/productos.json"></script>
       <script type="text/javascript" src="js/productos.js"></script>
       <script type="text/javascript" src="js/contadorOfertas.js"></script>
+      <script type="text/javascript" src="js/dayNight.js"></script>
       <script src="js/contacto.js" type="text/javascript" charset="utf-8"></script>
     </head>
-    <body>
+    <body onload="localS();">
     	<nav class="navbar navbar-expand-lg navbar-light bg-light">
       		<a class="navbar-brand" href="index.html">RECA</a>
       		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,6 +46,15 @@
           		</ul>
           		<ul class="navbar-nav mr-auto"></ul>
           		<ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Opciones
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" onclick="day();">Día</a>
+                      <a class="dropdown-item" onclick="night();">Noche</a>
+                  </div>
+                </li>
           			<li class="nav-item">
             			<a href="" class="nav-link fa fa-shopping-cart fa-1x"></a>
           			</li>
