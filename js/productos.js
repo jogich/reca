@@ -172,3 +172,15 @@ function cargarProductosId(){
 	}
 
 }
+//Creamos un nuevo objeto Event y definimos su nombre
+var eventoLogin = new Event('login');
+
+// Añadimos una escucha, de modo que cuando se produzca el
+//evento ‘imprime’ se ejecute la función que definamos
+document.addEventListener('login', function() {  alert('Fase Beta error');
+});
+// Disparamos el evento
+
+function beta(){
+	document.dispatchEvent(eventoLogin);
+}
